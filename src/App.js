@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// emmet for this : rafce (react arrow function export component)
+import React from "react";
 
-function App() {
+import { Brand, CTA, Navbar } from "./components";
+import {
+  Footer,
+  Blog,
+  Possibility,
+  Feature,
+  WhatGPT3,
+  Header,
+} from "./containers";
+
+import "./App.css";
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="gradient_bg">
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Feature />
+      <Possibility />
+      <CTA />
+      <Blog />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
