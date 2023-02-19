@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import "./navbar.css";
 
-// BEM convention for naming the className : Block Element Modifier
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
@@ -18,10 +17,10 @@ const Navbar = () => {
             <a href="#home">Home</a>
           </p>
           <p>
-            <a href="#wgpt3">What is GPT3</a>
+            <a href="#wgpt3">What is GPT3?</a>
           </p>
           <p>
-            <a href="#possibility">OpenAI</a>
+            <a href="#possibility">Open AI</a>
           </p>
           <p>
             <a href="#features">Case Studies</a>
@@ -56,10 +55,10 @@ const Navbar = () => {
                 <a href="#home">Home</a>
               </p>
               <p>
-                <a href="#wgpt3">What is GPT3</a>
+                <a href="#wgpt3">What is GPT3?</a>
               </p>
               <p>
-                <a href="#possibility">OpenAI</a>
+                <a href="#possibility">Open AI</a>
               </p>
               <p>
                 <a href="#features">Case Studies</a>
@@ -67,11 +66,10 @@ const Navbar = () => {
               <p>
                 <a href="#blog">Library</a>
               </p>
-
-              <div className="gpt3__navbar-menu_container-links-sign">
-                <p>Sign in</p>
-                <button type="button">Sign up</button>
-              </div>
+            </div>
+            <div className="gpt3__navbar-menu_container-links-sign">
+              <p>Sign in</p>
+              <button type="button">Sign up</button>
             </div>
           </div>
         )}
